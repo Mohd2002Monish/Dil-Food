@@ -1,9 +1,9 @@
 'use client';
 import React from 'react';
 import { useSelector } from 'react-redux';
-import CardCart from '@/Components/CartCard';
-import CartPriceComponent from '@/Components/priceComponent';
-import NavBar from '@/Components/navbar';
+import CardCart from '../../Components/cartCard';
+import CartPriceComponent from '../../Components/priceComponent';
+import NavBar from '../../Components/navbar';
 function page() {
   const { data } = useSelector((el) => {
     return el.cart;
@@ -18,7 +18,7 @@ function page() {
         <>
           {' '}
           <div className="cartmedia">
-            <div className="cartmedia2" style={{ width: '65%' }}>
+            <div className="cartmedia2">
               {data.map((el) => {
                 return <CardCart key={Math.random() + el.id} data={el} />;
               })}
