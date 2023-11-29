@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 
-import styles from './styles/Cart.module.css';
+import styles from './Styles/cart.module.css';
 function CartPriceComponent({ data }) {
   const price = data.reduce((acc, curr) => acc + curr.price * curr.qty, 0) || 0;
 
