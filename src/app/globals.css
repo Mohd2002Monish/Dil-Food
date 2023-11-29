@@ -1,0 +1,37 @@
+.cartmedia {
+  display: flex;
+}
+.cartmedia2 {
+  width: 65%;
+}
+.addtocart2 {
+  width: 40%;
+
+  margin-top: 30px;
+  background: white;
+  border: none;
+  padding: 20px 10px;
+  color: #e4002b;
+  font-weight: 700;
+  font-weight: 18px;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .cartmedia {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+  }
+  .cartmedia2 {
+    width: 100%;
+  }
+  .cartmedia3 {
+    justify-content: center;
+    display: flex;
+    align-self: center;
+    width: 100%;
+
+    margin-left: -40px;
+  }
+}
