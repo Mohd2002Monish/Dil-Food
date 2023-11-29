@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import CardCart from '../../Components/cartCard';
 import CartPriceComponent from '../../Components/priceComponent';
 import NavBar from '../../Components/navbar';
-function page() {
+function Page() {
   const { data } = useSelector((el) => {
     return el.cart;
   });
@@ -36,4 +36,4 @@ function page() {
   );
 }
 
-export default page;
+export default Page;
